@@ -1,0 +1,494 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "27a0da04-a5b9-4844-8b87-4e561fac9326",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Niharika\n",
+      "Nihaarika\n",
+      "PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages\n",
+      "PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Basic syntax of string operations in python\n",
+    "a=\"Niharika\"\n",
+    "b=\"Nihaarika\"\n",
+    "c=\"\"\"PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages\"\"\"\n",
+    "d='''PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP'''\n",
+    "print(a)\n",
+    "print(b)\n",
+    "print(c)\n",
+    "print(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "d4c00948-2af5-43eb-a9a5-a7a739db6d84",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "y\n",
+      "yt\n",
+      "yth\n",
+      "ytho\n",
+      "ython\n",
+      "ython \n",
+      "ython p\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String slicing01\n",
+    "x=\"Python programming\"\n",
+    "print(x[1:2])\n",
+    "print(x[1:3])\n",
+    "print(x[1:4])\n",
+    "print(x[1:5])\n",
+    "print(x[1:6])\n",
+    "print(x[1:7])\n",
+    "print(x[1:8])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "01cec470-3f5d-4905-8567-9f320d716f34",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ython programming\n",
+      "Python programming\n",
+      "Python\n",
+      "g\n",
+      "g\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String slicing02\n",
+    "x=\"Python programming\"\n",
+    "print(x[1:])\n",
+    "print(x[0:])\n",
+    "print(x[:6])\n",
+    "print(x[-1])\n",
+    "print(x[-1:])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "8df96468-9984-4447-8d9b-28621f0aee1a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "amming\n",
+      "agr o\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String slicing03\n",
+    "x=\"Python programming\"\n",
+    "print(x[-6:])\n",
+    "print(x[-6:2:-2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "6dc924c1-22de-4d57-9f3a-5d6940ad368e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "agr otP\n",
+      "tg\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String slicing04\n",
+    "x=\"Python programming\"\n",
+    "print(x[-6::-2])\n",
+    "print(x[2::8])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "f01edbfa-638d-4cf1-9a88-dd89779a4156",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Kih\n",
+      "Kih\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String slicing05\n",
+    "y=\"Krishna\"\n",
+    "print(y[-7:-2:2])\n",
+    "print(y[0:5:2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "4eb891e2-2f5f-4443-8a5b-b75b14c01274",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Krishna\n",
+      "Krishna\n",
+      "Krishna\n",
+      "Krishna\n",
+      "Krishna\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String slicing06\n",
+    "y=\"Krishna\"\n",
+    "print(y[::1])\n",
+    "print(y[0:])\n",
+    "print(y[::])\n",
+    "print(y[:])\n",
+    "print(y[-7:])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "265760e7-05d4-412f-9ab6-08076ca8b384",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "r\n",
+      "Krish\n",
+      "Kiha\n",
+      "anhsirK\n",
+      "a\n",
+      "a\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String slicing07\n",
+    "y=\"Krishna\"\n",
+    "print(y[1])\n",
+    "print(y[0:5])\n",
+    "print(y[::2])\n",
+    "print(y[::-1])\n",
+    "print(y[::-7])\n",
+    "print(y[-1:])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "1d49f47b-a5c8-490e-909d-d095e9f68f09",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "rishn\n",
+      "rishn\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String slicing08\n",
+    "y=\"Krishna\"\n",
+    "print(y[1:6])\n",
+    "print(y[-6:-1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "39be027d-1f93-4eae-9b4b-7b1f176f6a21",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hna\n",
+      "hna\n",
+      "Kris\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String slicing09\n",
+    "y=\"Krishna\"\n",
+    "print(y[4:])\n",
+    "print(y[-3:])\n",
+    "print(y[:-3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "923e19f4-3465-4a12-b28a-066df7b35884",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Kiha\n",
+      "Ksa\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String slicing10\n",
+    "y=\"Krishna\"\n",
+    "print(y[::2])\n",
+    "print(y[::3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "59a69890-34b6-4b1e-9402-8f1771f701e3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "P\n",
+      "y\n",
+      "t\n",
+      "h\n",
+      "o\n",
+      "n\n"
+     ]
+    }
+   ],
+   "source": [
+    "#looping in string\n",
+    "for i in \"Python\":\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "1cf28465-2cfe-4095-b9d3-c65cb53a94cf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String method\n",
+    "z=\"Krishna\"\n",
+    "print(len(z))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "9806cc42-cf57-4323-8065-71e4f3a72f42",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the string: niha\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "#To check the vowels\n",
+    "st1=input(\"Enter the string:\")\n",
+    "a=0\n",
+    "for i in st1:\n",
+    "    if i in \"aeiouAEIOU\":\n",
+    "        a=a+1\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "be4a386e-0597-4dfe-a547-a8206fa58f3c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING\n",
+      "artificial intelligence and machine learning\n",
+      "28\n",
+      "Artificial Foundation and Machine Learning\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String methods\n",
+    "s=\"Artificial Intelligence and Machine Learning\"\n",
+    "print(s.upper())\n",
+    "print(s.lower())\n",
+    "print(s.find(\"Machine\"))\n",
+    "print(s.replace(\"Intelligence\",\"Foundation\"))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "4a689b85-f224-4f72-a574-4a10cf73869c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "HelloStudents\n",
+      "HelloHello\n"
+     ]
+    }
+   ],
+   "source": [
+    "#String concatenation and Repetition\n",
+    "a=\"Hello\"\n",
+    "b=\"Students\"\n",
+    "print(a+b)\n",
+    "print(a*2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "1a8e2445-0362-4e0e-8bf4-01460a3e411a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "2\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Loop with step value using range()\n",
+    "for i in range(0,5,2):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "1314d41c-7e89-4b74-825b-da1fa41be868",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the sentence: She is an intelligent girl1\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "No of upper cases: 1\n",
+      "No of lower cases: 21\n",
+      "No of digits: 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Count no.of uppercase,lowercase and digits in a sentence\n",
+    "s=input(\"Enter the sentence:\")\n",
+    "u=0\n",
+    "l=0\n",
+    "d=0\n",
+    "for i in s:\n",
+    "    if i.isupper():\n",
+    "        u=u+1\n",
+    "    elif i.islower():\n",
+    "        l=l+1\n",
+    "    elif i.isdigit():\n",
+    "        d=d+1\n",
+    "print(\"No of upper cases:\",u)\n",
+    "print(\"No of lower cases:\",l)\n",
+    "print(\"No of digits:\",d)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

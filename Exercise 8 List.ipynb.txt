@@ -1,0 +1,387 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "1915d4c4-7882-470a-9317-9a75bb33636f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 4, 6, 8, 10] ['Red', 'blue', 'pink', 'yellow', 'black'] [109, 80.9, 'Ashifa', True] []\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Creating a list \n",
+    "numbers=[2,4,6,8,10]\n",
+    "colors=[\"Red\",\"blue\",\"pink\",\"yellow\",\"black\"]\n",
+    "combined_list=[109,80.9,\"Ashifa\",True]\n",
+    "empty_list=[]\n",
+    "print(numbers,colors,combined_list,empty_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "8b3e7ba4-f1e8-4008-aed3-b38d7fc492ad",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Red\n",
+      "Red\n",
+      "black\n",
+      "black\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Accessing list elements\n",
+    "colors=[\"Red\",\"blue\",\"pink\",\"yellow\",\"black\"]\n",
+    "print(colors[0])\n",
+    "print(colors[-5])\n",
+    "print(colors[4])\n",
+    "print(colors[-1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "defdd853-9565-4a46-a597-460fe2eabcdc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Red', 'Lavender', 'Green', 'yellow', 'black']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Modify a list\n",
+    "colors=[\"Red\",\"blue\",\"pink\",\"yellow\",\"black\"]\n",
+    "colors[1]=\"Lavender\"\n",
+    "colors[2]=\"Green\"\n",
+    "print(colors)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "98b23df8-5c7e-48f9-b8e8-53dc488d8fee",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Red', 'Orange', 'blue', 'pink', 'yellow', 'black', 'White']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Common list operations-01\n",
+    "colors=[\"Red\",\"blue\",\"pink\",\"yellow\",\"black\"]\n",
+    "colors.append(\"White\")\n",
+    "colors.insert(1,\"Orange\")\n",
+    "print(colors)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "3164439e-949e-4427-aa31-bf4cc95425a9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Red', 'blue', 'pink', 'yellow']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Common list operations-02\n",
+    "colors=[\"Red\",\"blue\",\"pink\",\"yellow\",\"black\"]\n",
+    "colors.pop()\n",
+    "print(colors)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "dc7a9dd4-81b8-4393-bf58-b1981a935728",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['blue', 'pink', 'yellow', 'black']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Common list operations-03\n",
+    "colors=[\"Red\",\"blue\",\"pink\",\"yellow\",\"black\"]\n",
+    "colors.remove(\"Red\")\n",
+    "print(colors)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "6cc3adf7-f0c7-4ee7-b560-72a30a7be88a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Common list operations-04\n",
+    "colors=[\"Red\",\"blue\",\"pink\",\"yellow\",\"black\"]\n",
+    "combined_list=[135,80.9,\"Niharika\",True]\n",
+    "print(len(colors))\n",
+    "print(len(combined_list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "537782f0-33d5-4c5c-8c30-b7b856debc3d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n",
+      "98\n",
+      "[5, 20, 25, 34, 98]\n",
+      "[98, 34, 25, 20, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Build-in functions in list\n",
+    "a=[5,34,98,20,25]\n",
+    "print(min(a))\n",
+    "print(max(a))\n",
+    "a.sort()\n",
+    "print(a)\n",
+    "a.reverse()\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "6c4f1d72-9fad-46d0-b464-56485016b03c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Red\n",
+      "blue\n",
+      "pink\n",
+      "yellow\n",
+      "black\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Looping in list\n",
+    "colors=[\"Red\",\"blue\",\"pink\",\"yellow\",\"black\"]\n",
+    "for i in colors:\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "f1ec5139-b883-428c-ac6a-0650e6c4f726",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[5, 34]\n",
+      "[25, 20, 98, 34, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#List slicing\n",
+    "a=[5,34,98,20,25]\n",
+    "print(a[0:2])\n",
+    "print(a[::-1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "c34393ec-910d-4c1e-8297-77d4b076dafc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 4, 9, 16, 25]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Square of a number from ranges 1 to 5\n",
+    "s=[n**2 for n in range(1,6)]\n",
+    "print(s)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "5223d74e-3948-4d3b-a590-74536f099e6d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[25, 4, 16, 49, 64]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Square of numbers\n",
+    "l1=[5,2,4,7,8]\n",
+    "s=[n**2 for n in l1]\n",
+    "print(s)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "3a89afac-e0a2-4a51-8250-378284a508b0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Count how many numbers are even in the list\n",
+    "z=[3,8,9,10,45,22]\n",
+    "w=0\n",
+    "for n in z:\n",
+    "    if n%2==0:\n",
+    "        w+=1\n",
+    "print(w)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "60b3206e-e9fc-4c1c-bd5c-85864c6ed441",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Ilamathi\n",
+      "Swetha\n",
+      "Nishanth\n",
+      "Niharika\n",
+      "['Ilamathi', 'Sreejish', 'Swetha', 'Nishanth', 'Niharika']\n",
+      "['Ilamathi', 'Sreejish', 'Swetha', 'Nishanth']\n",
+      "['Ilamathi', 'Nishanth', 'Sreejish', 'Swetha']\n",
+      "Ilamathi\n",
+      "Nishanth\n",
+      "Sreejish\n",
+      "Swetha\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the name: nish\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The name is not present in the list\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Exercise 1\n",
+    "student=[]\n",
+    "student.append(\"Ilamathi\")\n",
+    "student.append(\"Swetha\")\n",
+    "student.append(\"Nishanth\")\n",
+    "student.append(\"Niharika\")\n",
+    "for i in student:\n",
+    "    print(i)\n",
+    "student.insert(1,\"Sreejish\")\n",
+    "print(student)\n",
+    "student.remove(\"Niharika\")\n",
+    "print(student)\n",
+    "student.sort()\n",
+    "print(student)\n",
+    "for i in student:\n",
+    "    print(i)\n",
+    "a=input(\"Enter the name:\")\n",
+    "for i in student:\n",
+    "    if i==a:\n",
+    "        print(\"The name is present in the list\")\n",
+    "    else:\n",
+    "        print(\"The name is not present in the list\")\n",
+    "    break\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
